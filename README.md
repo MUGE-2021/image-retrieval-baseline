@@ -71,6 +71,8 @@ python -u src/training/main.py \
 
 The training will cost a few hours. The log and checkpoint files will be saved under the `logs` directory.
 
+**Caution**: Since the training convergence and stablility of in-batch contrastive learning are highly dependent on the global batch-size. If you use a much smaller batch-size than the default setting (32 per-GPU \* 8 GPU), please try to use a smaller learning rate to avoid training divergence. (related [issue](https://github.com/MUGE-2021/image-retrieval-baseline/issues/1)). We recommend to use more GPUs and larger global batch-size to achieve more stable convergence and better model performance.
+
 ### Inference and Evaluation
 
 Run the following command to compute image and query features using the trained CLIP model:
