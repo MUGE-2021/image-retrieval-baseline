@@ -102,11 +102,11 @@ python -u src/eval/make_topk_predictions.py \
     --output="${DATAPATH}/test_predictions.jsonl"
 ```
 
-The jsonl file can be submitted to MUGE challenge site. In expection, the evaluated model will get a **mean-recall of around 50**. We strongly believe the baseline can be easily tuned and improved to achieve much better points :)
+The jsonl file can be submitted to MUGE challenge site. In expectation, the evaluated model will get a **mean-recall of around 50**. We strongly believe the baseline can be easily tuned and improved to achieve much better points :)
 
 We also provide the evaluation script to evaluate model's mean-recall on validation set. Run the following command:
 ```
-python src/eval/evaluation.py valid_predictions.jsonl valid_queries.jsonl output.json
+python src/eval/evaluation.py valid_queries.jsonl valid_predictions.jsonl output.json
 ```
 The score will be saved in `output.json`. The script is the same as the MUGE evaluation server.
 
