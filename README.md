@@ -1,7 +1,5 @@
 # MUGE Multimodal Retrieval Baseline
 
-**Update: We have released a much more competitive MUGE retrieval baseline in our [Chinese-CLIP repo](https://github.com/OFA-Sys/Chinese-CLIP). We strongly recommend to try it!**
-
 This repo is implemented based on the **[open_clip project](https://github.com/mlfoundations/open_clip)**, with modifications to adapt to the Chinese Multimodal Retrieval task
 
 ## Requirements and Installation
